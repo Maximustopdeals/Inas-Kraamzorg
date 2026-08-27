@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Sans Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces Variable", ui-serif, Georgia, serif;
+
+  --color-cream-50: #fdf9f5;
+  --color-cream-100: #faf3ec;
+  --color-cream-200: #f4e8dd;
+
+  --color-blush-50: #fdf2f6;
+  --color-blush-100: #fbe4ee;
+  --color-blush-200: #f7c9de;
+  --color-blush-300: #f0a3c6;
+
+  --color-rose-400: #ef6ba3;
+  --color-rose-500: #e5407e;
+  --color-rose-600: #cd2d6a;
+  --color-rose-700: #ab2357;
+
+  --color-plum-500: #6d4a5b;
+  --color-plum-700: #4a2f3d;
+  --color-plum-800: #3d2631;
+  --color-plum-900: #2e1b24;
+
+  --shadow-soft: 0 10px 40px -12px rgb(205 45 106 / 0.15);
+  --shadow-lift: 0 24px 60px -20px rgb(46 27 36 / 0.22);
+
+  --animate-fade-up: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream-50);
+  color: var(--color-plum-800);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Elfsight widget branding cleanup spacing */
+.elfsight-app-76bcf5ef-8529-4049-9a40-6d69b12c82de {
+  width: 100%;
+}
+
+::selection {
+  background: var(--color-blush-200);
+  color: var(--color-plum-900);
+}
