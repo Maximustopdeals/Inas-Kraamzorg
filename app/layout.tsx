@@ -92,6 +92,16 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body className="flex min-h-svh flex-col">
+        {/* GTM noscript — direct na body open */}
+        <noscript>
+          <iframe
+            src={`https://www.googletagmanager.com/ns.html?id=${site.gtId}`}
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+
         {/* Google Tag (gtag.js) — GT + GA4 */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${site.gtId}`}
@@ -106,6 +116,13 @@ export default function RootLayout({
             gtag('config', '${site.gaId}');
           `}
         </Script>
+
+        {/* Elfsight Platform — voor Google Reviews widget */}
+        <Script
+          src="https://elfsightcdn.com/platform.js"
+          strategy="afterInteractive"
+        />
+
         <JsonLd />
         <noscript>
           <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
