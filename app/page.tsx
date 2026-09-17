@@ -207,12 +207,13 @@ export default function Home() {
                 aria-hidden="true"
               />
               <Image
-                src="/images/hero-kraamzorg.webp"
-                alt="Sfeervolle babykamer in warme roze en crème tinten — Inas Kraamzorg Zaandam"
-                width={2048}
-                height={1152}
+                src="/images/hero-moeder-baby.webp"
+                alt="Moeder met pasgeboren baby in een warme omhelzing — Inas Kraamzorg Zaandam"
+                width={1672}
+                height={941}
                 priority
-                className="aspect-[4/3] w-full rounded-[2.5rem] object-cover shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
+                fetchPriority="high"
+                className="aspect-[4/3] w-full rounded-[2.5rem] object-cover object-center shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
               />
               <div className="absolute -bottom-6 -left-4 rounded-3xl bg-white px-6 py-5 shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)] sm:-left-8">
                 <p className="font-display text-3xl font-semibold text-rose-600">
