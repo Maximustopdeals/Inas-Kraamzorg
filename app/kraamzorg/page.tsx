@@ -6,9 +6,9 @@ import Faq, { FaqJsonLd } from "@/components/faq";
 import { CtaBanner, Eyebrow, PageHero } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Kraamzorg in Zaandam — Warme, professionele zorg aan huis",
+  title: "Kraamzorg in Zaandam | Warme, professionele zorg aan huis",
   description:
-    "Professionele kraamzorg in Zaandam en de Zaanstreek: medische controles, borstvoedingsbegeleiding, babyverzorging en emotionele steun. 100% vergoed vanuit de basisverzekering, geen eigen risico.",
+    "Persoonlijke kraamzorg in Zaandam en de Zaanstreek door kraamverzorgster Fatima. Medische controles, borstvoedingsbegeleiding, babyverzorging en emotionele steun. 100% vergoed vanuit de basisverzekering.",
   alternates: { canonical: "/kraamzorg/" },
 };
 
@@ -16,32 +16,32 @@ const diensten = [
   {
     icon: "M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z",
     title: "Medische controles",
-    text: "Dagelijkse gezondheidschecks voor moeder en baby: temperatuur, gewicht van je baby, wondgenezing, navelverzorging en het algemene welzijn. Ik houd de ontwikkeling nauwlettend in de gaten en schakel bij twijfel direct je verloskundige in.",
+    text: "Dagelijkse gezondheidschecks voor moeder en baby: temperatuur, gewicht, wondgenezing, navelverzorging en het algemene welzijn. Ik houd de ontwikkeling in de gaten en schakel bij twijfel direct je verloskundige in.",
   },
   {
     icon: "M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z",
     title: "Borstvoedingsbegeleiding",
-    text: "Deskundige ondersteuning bij aanleggen, drinkhouding en voedingsmomenten. Met geduld en praktische tips help ik je op weg. Kies je voor flesvoeding? Ook dan begeleid ik je met dezelfde zorg en aandacht.",
+    text: "Ondersteuning bij aanleggen, drinkhouding en voedingsmomenten. Met geduld en praktische tips help ik je op weg. Kies je voor flesvoeding? Ook dan begeleid ik je met dezelfde zorg en aandacht.",
   },
   {
     icon: "M15.182 15.182a4.5 4.5 0 01-6.364 0M21 12a9 9 0 11-18 0 9 9 0 0118 0zM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75zm-.375 0h.008v.015h-.008V9.75zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75zm-.375 0h.008v.015h-.008V9.75z",
     title: "Babyverzorging",
-    text: "Van het eerste badje tot verschonen en het herkennen van de signalen van je baby. Ik leer jou en je partner alle basisvaardigheden met geduld, zodat jullie vol vertrouwen verder kunnen.",
+    text: "Van het eerste badje tot verschonen en het herkennen van de signalen van je baby. Ik leer jou en je partner de basisvaardigheden met geduld, zodat jullie met vertrouwen verder kunnen.",
   },
   {
     icon: "M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75",
     title: "Huishoudelijke hulp",
-    text: "Lichte ondersteuning in en om het huis: een opgeruimde keuken, een wasje, boodschappen of een maaltijd. Zodat jij kunt rusten en al je energie in je herstel en je baby kunt steken.",
+    text: "Lichte ondersteuning in en om het huis: een opgeruimde keuken, een wasje of een maaltijd. Zodat jij kunt rusten en je energie in je herstel en je baby kunt steken.",
   },
   {
     icon: "M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.383a14.406 14.406 0 01-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 10-7.517 0c.85.493 1.509 1.333 1.509 2.316V18",
     title: "Voorlichting & advies",
-    text: "Praktisch advies over je herstel, voeding, het slaapritme van je baby en alles wat bij de kraamperiode komt kijken. Geen vraag is te klein — ik neem de tijd voor al je vragen.",
+    text: "Praktisch advies over je herstel, voeding, het slaapritme van je baby en alles wat bij de kraamperiode komt kijken. Geen vraag is te klein. Ik neem de tijd voor al je vragen.",
   },
   {
     icon: "M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z",
     title: "Emotionele steun",
-    text: "De kraamtijd brengt veel emoties met zich mee — van euforie tot onzekerheid. Ik bied een luisterend oor, herkennen en erkenning, en begripvolle begeleiding in jouw tempo.",
+    text: "De kraamtijd brengt veel emoties met zich mee, van blijdschap tot onzekerheid. Ik bied een luisterend oor en begripvolle begeleiding in jouw tempo.",
   },
 ];
 
@@ -52,7 +52,7 @@ const redenen = [
   },
   {
     title: "Tweetalig",
-    text: "Duidelijke uitleg in het Nederlands én het Arabisch. Communicatie in de taal waarin jij je het prettigst voelt.",
+    text: "Duidelijke uitleg in het Nederlands en het Arabisch. Communicatie in de taal waarin jij je het prettigst voelt.",
   },
   {
     title: "Persoonlijk",
@@ -60,7 +60,7 @@ const redenen = [
   },
   {
     title: "Flexibel",
-    text: "Een planning die aansluit bij jullie ritme en de behoeften van je gezin — geen strakke schema's, maar zorg op maat.",
+    text: "Een planning die aansluit bij jullie ritme en de behoeften van je gezin. Geen strakke schema’s, maar zorg op maat.",
   },
 ];
 
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: "Hoe lang duurt de kraamweek?",
     answer:
-      "De kraamperiode duurt officieel 8 tot 10 dagen na de geboorte. Het aantal zorguren per dag hangt af van je indicatie en persoonlijke situatie — meestal tussen de 3 en 8 uur per dag. Tijdens de intake stemmen we dit af op jullie wensen.",
+      "De kraamperiode duurt officieel 8 tot 10 dagen na de geboorte. Het aantal zorguren per dag hangt af van je indicatie en persoonlijke situatie, meestal tussen de 3 en 8 uur per dag. Tijdens de intake stemmen we dit af op jullie wensen.",
   },
   {
     question: "Wat kost kraamzorg mij?",
@@ -111,7 +111,7 @@ const faqs = [
   {
     question: "Wanneer vindt het intakegesprek plaats?",
     answer:
-      "Het intakegesprek plannen we rond de 30e tot 34e week van je zwangerschap, bij jou thuis of telefonisch. We bespreken je wensen, het geboorteplan, de zorguren en eventuele bijzonderheden, zodat de zorg helemaal past bij jullie gezin.",
+      "Het intakegesprek plannen we rond de 30e tot 34e week van je zwangerschap, bij jou thuis of telefonisch. We bespreken je wensen, het geboorteplan, de zorguren en eventuele bijzonderheden, zodat de zorg past bij jullie gezin.",
   },
   {
     question: "Kan ik ook kraamzorg krijgen na een ziekenhuisbevalling?",
@@ -126,7 +126,7 @@ export default function KraamzorgPage() {
       <PageHero
         eyebrow="Kraamzorg in Zaandam"
         title="Warme, deskundige kraamzorg aan huis"
-        intro="Persoonlijke en professionele kraamzorg in Zaandam en omgeving. Met aandacht, rust en vertrouwen begeleid ik jouw gezin tijdens de kraamweek — volledig vergoed vanuit de basisverzekering."
+        intro="Persoonlijke en professionele kraamzorg in Zaandam en omgeving. Met aandacht, rust en vertrouwen begeleid ik jouw gezin tijdens de kraamweek. Volledig vergoed vanuit de basisverzekering."
       />
 
       {/* Badges */}
@@ -174,9 +174,8 @@ export default function KraamzorgPage() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-5 text-lg leading-relaxed text-plum-500">
-              Kraamzorg is meer dan zorg alleen — het is rust, vertrouwen en
-              deskundigheid op het kwetsbaarste én mooiste moment van jullie
-              leven.
+              Kraamzorg is meer dan zorg alleen. Het is rust, vertrouwen en
+              deskundigheid op een kwetsbaar én mooi moment in jullie leven.
             </p>
           </Reveal>
         </div>
@@ -334,7 +333,10 @@ export default function KraamzorgPage() {
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold tracking-[0.14em] text-blush-300 uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-rose-400" aria-hidden="true" />
+                <span
+                  className="h-1.5 w-1.5 rounded-full bg-rose-400"
+                  aria-hidden="true"
+                />
                 Zo werkt het
               </p>
             </Reveal>
@@ -394,11 +396,11 @@ export default function KraamzorgPage() {
             </Reveal>
             <Reveal delay={200}>
               <p className="mt-6 text-lg leading-relaxed text-plum-500">
-                Voor de geboorte plannen we een intakegesprek — bij jou thuis
+                Voor de geboorte plannen we een intakegesprek, bij jou thuis
                 of telefonisch. Zo leren we elkaar kennen en stemmen we de zorg
                 af op jouw situatie. We bespreken jouw wensen, gewoonten en
-                eventuele bijzonderheden, zodat je kraamzorg helemaal past bij
-                jullie gezin.
+                eventuele bijzonderheden, zodat de kraamzorg past bij jullie
+                gezin.
               </p>
             </Reveal>
             <Reveal delay={300}>
@@ -418,7 +420,7 @@ export default function KraamzorgPage() {
           <Reveal delay={150}>
             <Image
               src="/images/baby-homepage.webp"
-              alt="Pasgeboren baby slaapt rustig — kraamzorg op maat in de Zaanstreek"
+              alt="Pasgeboren baby slaapt rustig. Kraamzorg op maat in de Zaanstreek"
               width={480}
               height={320}
               className="aspect-[4/3] w-full rounded-[2.5rem] object-cover shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
