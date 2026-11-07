@@ -63,8 +63,12 @@ export default function OverMijPage() {
               className="aspect-[4/4.4] w-full rounded-[2.5rem] object-cover object-top shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
             />
             <div className="absolute -bottom-6 left-1/2 w-max -translate-x-1/2 rounded-2xl bg-white px-6 py-4 text-center shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]">
-              <p className="font-display text-lg font-semibold text-plum-900">Fatima</p>
-              <p className="text-sm font-semibold text-rose-600">Gediplomeerd kraamverzorgster</p>
+              <p className="font-display text-lg font-semibold text-plum-900">
+                Fatima
+              </p>
+              <p className="text-sm font-semibold text-rose-600">
+                Gediplomeerd kraamverzorgster
+              </p>
             </div>
           </Reveal>
           <div className="lg:col-span-3">
@@ -79,19 +83,32 @@ export default function OverMijPage() {
             <Reveal delay={200}>
               <div className="mt-6 space-y-5 text-lg leading-relaxed text-plum-500">
                 <p>
-                  Als kraamverzorgster met een achtergrond in zowel de Nederlandse als de Arabische cultuur begrijp ik hoe belangrijk persoonlijke aandacht, respect en privacy zijn tijdens de kraamtijd.
+                  Als kraamverzorgster met een achtergrond in zowel de
+                  Nederlandse als de Arabische cultuur begrijp ik hoe belangrijk
+                  persoonlijke aandacht, respect en privacy zijn tijdens de
+                  kraamtijd.
                 </p>
                 <p>
-                  Met ruim 6 jaar ervaring begeleid ik gezinnen in Zaandam en de Zaanstreek. Mijn wens is dat de eerste dagen met je baby veilig en vertrouwd voelen, of je nu kiest voor een thuisbevalling of in het ziekenhuis bevalt.
+                  Met ruim 6 jaar ervaring begeleid ik gezinnen in Zaandam en de
+                  Zaanstreek. Mijn wens is dat de eerste dagen met je baby veilig
+                  en vertrouwd voelen, of je nu kiest voor een thuisbevalling of
+                  in het ziekenhuis bevalt.
                 </p>
               </div>
             </Reveal>
             <Reveal delay={300}>
               <div className="mt-10 grid gap-5 sm:grid-cols-3">
                 {eigenschappen.map((e) => (
-                  <div key={e.title} className="rounded-3xl border border-blush-100 bg-white p-6 text-center shadow-sm">
-                    <h3 className="font-display text-lg font-medium text-plum-900">{e.title}</h3>
-                    <p className="mt-1.5 text-sm leading-relaxed text-plum-500">{e.text}</p>
+                  <div
+                    key={e.title}
+                    className="rounded-3xl border border-blush-100 bg-white p-6 text-center shadow-sm"
+                  >
+                    <h3 className="font-display text-lg font-medium text-plum-900">
+                      {e.title}
+                    </h3>
+                    <p className="mt-1.5 text-sm leading-relaxed text-plum-500">
+                      {e.text}
+                    </p>
                   </div>
                 ))}
               </div>
@@ -113,13 +130,20 @@ export default function OverMijPage() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-cream-100/75">
-              Ik begeleid gezinnen in zowel het Nederlands als het Arabisch. Zo kun je in de taal praten waarin jij je het prettigst voelt, zonder taalbarrière.
+              Ik begeleid gezinnen in zowel het Nederlands als het Arabisch. Zo
+              kun je in de taal praten waarin jij je het prettigst voelt, zonder
+              taalbarrière.
             </p>
           </Reveal>
           <Reveal delay={300}>
             <div className="mt-9 flex flex-wrap justify-center gap-4">
-              <span className="rounded-full bg-white/10 px-6 py-3 text-lg font-bold text-white">Nederlands</span>
-              <span lang="ar" className="rounded-full bg-rose-500 px-6 py-3 text-lg font-bold text-white">
+              <span className="rounded-full bg-white/10 px-6 py-3 text-lg font-bold text-white">
+                Nederlands
+              </span>
+              <span
+                lang="ar"
+                className="rounded-full bg-rose-500 px-6 py-3 text-lg font-bold text-white"
+              >
                 العربية (Arabisch)
               </span>
             </div>
@@ -141,13 +165,22 @@ export default function OverMijPage() {
             </Reveal>
             <ol className="mt-10 space-y-6">
               {werkwijze.map((stap, i) => (
-                <Reveal as="li" key={stap.title} delay={i * 120} className="flex gap-5">
+                <Reveal
+                  as="li"
+                  key={stap.title}
+                  delay={i * 120}
+                  className="flex gap-5"
+                >
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-rose-500 font-display text-xl font-semibold text-white">
                     {i + 1}
                   </span>
                   <div>
-                    <h3 className="font-display text-xl font-medium text-plum-900">{stap.title}</h3>
-                    <p className="mt-1.5 leading-relaxed text-plum-500">{stap.text}</p>
+                    <h3 className="font-display text-xl font-medium text-plum-900">
+                      {stap.title}
+                    </h3>
+                    <p className="mt-1.5 leading-relaxed text-plum-500">
+                      {stap.text}
+                    </p>
                   </div>
                 </Reveal>
               ))}
@@ -163,10 +196,10 @@ export default function OverMijPage() {
           </div>
           <Reveal delay={150}>
             <Image
-              src="/images/hero-kraamzorg.webp"
+              src="/images/zorgmoment.webp"
               alt="Rustige sfeer tijdens de kraamtijd in Zaandam"
-              width={2048}
-              height={1152}
+              width={1200}
+              height={800}
               className="aspect-[4/3] w-full rounded-[2.5rem] object-cover shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
             />
           </Reveal>
