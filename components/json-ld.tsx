@@ -8,7 +8,7 @@ export default function JsonLd() {
     name: site.legalName,
     alternateName: site.name,
     description:
-      "Persoonlijke kraamzorg aan huis in Zaandam en de Zaanstreek door gediplomeerd kraamverzorgster Fatima. Tweetalige begeleiding in Nederlands en Arabisch. 100% vergoed vanuit de basisverzekering.",
+      "Persoonlijke kraamzorg aan huis in Zaandam en de Zaanstreek door gediplomeerd kraamverzorgster Fatima. Warme en respectvolle begeleiding tijdens de kraamweek. Ook in het Arabisch. 100% vergoed vanuit de basisverzekering.",
     url: site.url,
     telephone: "+31624933335",
     email: site.email,
@@ -29,8 +29,26 @@ export default function JsonLd() {
       "@type": "Person",
       name: "Fatima",
       jobTitle: "Kraamverzorgster",
+      description:
+        "Gediplomeerd kraamverzorgster met ervaring in Zaandam en de Zaanstreek. Begeleidt gezinnen in het Nederlands en Arabisch.",
     },
+    knowsLanguage: ["nl", "ar"],
     sameAs: [site.instagram],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Kraamzorg diensten",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Kraamzorg aan huis",
+            description:
+              "Persoonlijke kraamzorg in Zaandam en omgeving, inclusief medische controles, borstvoedingsbegeleiding, babyverzorging en emotionele steun.",
+          },
+        },
+      ],
+    },
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: [
