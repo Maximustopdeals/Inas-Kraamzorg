@@ -13,19 +13,20 @@ import JsonLd from "@/components/json-ld";
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: "Kraamzorg Zaandam & Zaanstreek | Inas Kraamzorg",
+    default: "Kraamzorg Zaandam | Inas Kraamzorg",
     template: "%s | Inas Kraamzorg",
   },
   description:
-    "Persoonlijke kraamzorg in Zaandam en de Zaanstreek door kraamverzorgster Fatima. 100% vergoed door alle zorgverzekeraars. Tweetalige begeleiding (NL/AR). Meld je nu aan.",
+    "Persoonlijke kraamzorg in Zaandam en de Zaanstreek door kraamverzorgster Fatima. Warme begeleiding tijdens je kraamtijd. 100% vergoed. Ook in het Arabisch.",
   keywords: [
     "kraamzorg Zaandam",
-    "kraamverzorgende Zaandam",
+    "kraamverzorgster Zaandam",
     "kraamzorg Zaanstreek",
+    "kraamtijd Zaandam",
+    "thuisbevalling Zaandam",
     "kraamzorg aanvragen",
     "kraamzorg vergoeding",
-    "kraamverzorgster",
-    "kraamweek begeleiding",
+    "tweetalige kraamzorg",
   ],
   authors: [{ name: site.legalName }],
   creator: site.legalName,
@@ -37,23 +38,23 @@ export const metadata: Metadata = {
     locale: "nl_NL",
     url: site.url,
     siteName: site.name,
-    title: "Kraamzorg Zaandam & Zaanstreek | Inas Kraamzorg",
+    title: "Kraamzorg Zaandam | Inas Kraamzorg",
     description:
-      "Persoonlijke kraamzorg in Zaandam door kraamverzorgster Fatima. 100% vergoed door alle zorgverzekeraars.",
+      "Persoonlijke kraamzorg in Zaandam door kraamverzorgster Fatima. 100% vergoed vanuit de basisverzekering.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Inas Kraamzorg — Persoonlijke kraamzorg in Zaandam",
+        alt: "Inas Kraamzorg - Persoonlijke kraamzorg in Zaandam",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kraamzorg Zaandam & Zaanstreek | Inas Kraamzorg",
+    title: "Kraamzorg Zaandam | Inas Kraamzorg",
     description:
-      "Persoonlijke kraamzorg in Zaandam door kraamverzorgster Fatima. 100% vergoed door alle zorgverzekeraars.",
+      "Persoonlijke kraamzorg in Zaandam door kraamverzorgster Fatima. 100% vergoed vanuit de basisverzekering.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -64,6 +65,7 @@ export const metadata: Metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
   verification: {
@@ -92,7 +94,7 @@ export default function RootLayout({
   return (
     <html lang="nl">
       <body className="flex min-h-svh flex-col">
-        {/* GTM noscript — direct na body open */}
+        {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${site.gtId}`}
@@ -102,7 +104,7 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* Google Tag (gtag.js) — GT + GA4 */}
+        {/* Google Tag (gtag.js) */}
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${site.gtId}`}
           strategy="afterInteractive"
@@ -117,16 +119,19 @@ export default function RootLayout({
           `}
         </Script>
 
-        {/* Elfsight Platform — voor Google Reviews widget */}
+        {/* Elfsight Platform (Google Reviews) */}
         <Script
           src="https://elfsightcdn.com/platform.js"
           strategy="afterInteractive"
         />
 
         <JsonLd />
+
+        {/* Fallback voor Reveal-animaties zonder JavaScript */}
         <noscript>
-          <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
+          <style>{`.reveal{opacity:1!important;transform:none!important}`}</style>
         </noscript>
+
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
