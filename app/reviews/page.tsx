@@ -4,7 +4,7 @@ import ElfsightReviews from "@/components/elfsight-reviews";
 import { CtaBanner, Eyebrow, PageHero } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Reviews — Ervaringen van ouders over kraamzorg in Zaandam",
+  title: "Reviews | Ervaringen van ouders over kraamzorg in Zaandam",
   description:
     "Lees de Google-reviews van ouders over Inas Kraamzorg in Zaandam. Ontdek waarom gezinnen in de Zaanstreek kiezen voor de persoonlijke begeleiding van kraamverzorgster Fatima.",
   alternates: { canonical: "/reviews/" },
@@ -35,7 +35,7 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Reviews"
         title="Wat ouders zeggen over Inas Kraamzorg"
-        intro="Echte ervaringen van gezinnen in Zaandam en de Zaanstreek — rechtstreeks van Google."
+        intro="Echte ervaringen van gezinnen in Zaandam en de Zaanstreek, rechtstreeks van Google."
       />
 
       {/* Google Reviews widget */}
@@ -112,15 +112,13 @@ export default function ReviewsPage() {
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-plum-500">
             Ik waardeer elke ervaring die ouders met mij delen enorm. Het is
             een voorrecht om gezinnen te mogen begeleiden tijdens deze
-            bijzondere periode, en jullie feedback inspireert mij elke dag om
-            de best mogelijke zorg te bieden. Of je nu net bent bevallen of het
-            al wat langer geleden is — ik vind het ontzettend fijn als je jouw
-            ervaring wilt delen.
+            bijzondere periode. Jullie feedback inspireert mij om de best
+            mogelijke zorg te blijven bieden.
           </p>
         </Reveal>
         <Reveal delay={300}>
           <p className="font-display mt-8 text-2xl font-medium text-rose-600 italic">
-            — Fatima, kraamverzorgende bij Inas Kraamzorg Zaandam
+            Fatima, kraamverzorgende bij Inas Kraamzorg Zaandam
           </p>
         </Reveal>
       </section>
