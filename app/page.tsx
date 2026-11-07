@@ -7,9 +7,9 @@ import Faq, { FaqJsonLd } from "@/components/faq";
 import { CtaBanner, Eyebrow } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Kraamzorg Zaandam & Zaanstreek — Persoonlijke zorg voor moeder en baby",
+  title: "Kraamzorg Zaandam & Zaanstreek | Persoonlijke zorg voor moeder en baby",
   description:
-    "Kraamzorg in Zaandam door kraamverzorgster Fatima: warme, persoonlijke begeleiding tijdens je kraamweek. 100% vergoed vanuit de basisverzekering. Tweetalig (NL/AR). Meld je nu aan.",
+    "Persoonlijke kraamzorg in Zaandam door kraamverzorgster Fatima. Warme begeleiding tijdens je kraamweek, 100% vergoed vanuit de basisverzekering. Ook in het Arabisch. Meld je vrijblijvend aan.",
   alternates: { canonical: "/" },
 };
 
@@ -17,44 +17,44 @@ const usps = [
   {
     icon: "M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456z",
     title: "Rust in de eerste kraamweek",
-    text: "Zodat jij je volledig kunt richten op je herstel en je baby. Ik bewaak de rust in huis en neem je alles uit handen wat kan.",
+    text: "Jij kunt je richten op je herstel en je baby. Ik bewaak de rust in huis en neem wat ik kan uit handen.",
   },
   {
     icon: "M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z",
     title: "Persoonlijke begeleiding",
-    text: "Iedere situatie is anders. Daarom stemmen we de zorg volledig af op jouw gezin, jullie wensen en jullie ritme.",
+    text: "Iedere situatie is anders. We stemmen de zorg af op jouw gezin, jullie wensen en jullie ritme.",
   },
   {
     icon: "M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.125a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.625z",
     title: "Vertrouwd aanspreekpunt",
-    text: "Eén betrokken kraamverzorgster die met aandacht naast je staat — van de intake tot de laatste dag van de kraamweek.",
+    text: "Eén betrokken kraamverzorgster die met aandacht naast je staat, van de intake tot de laatste dag van de kraamweek.",
   },
 ];
 
 const diensten = [
   {
     title: "Medische controles",
-    text: "Dagelijkse checks voor moeder en baby: temperatuur, gewicht, wondgenezing en algemeen welzijn.",
+    text: "Dagelijkse controles van moeder en baby: temperatuur, gewicht, wondgenezing en algemeen welzijn.",
   },
   {
     title: "Borstvoedingsbegeleiding",
-    text: "Deskundige ondersteuning bij aanleggen, houding en voeden. Ook voor flesvoeding, als dat jullie keuze is.",
+    text: "Ondersteuning bij aanleggen, houding en voeden. Ook bij flesvoeding als dat jullie keuze is.",
   },
   {
     title: "Babyverzorging",
-    text: "Van het eerste badje tot verschonen — ik leer je alle basisvaardigheden met geduld en vertrouwen.",
+    text: "Van het eerste badje tot verschonen. Ik leer je de basisvaardigheden met geduld en rust.",
   },
   {
     title: "Huishoudelijke hulp",
-    text: "Lichte ondersteuning in huis, zodat jij kunt rusten en herstellen van de bevalling.",
+    text: "Lichte ondersteuning in huis, zodat jij kunt rusten en herstellen.",
   },
   {
     title: "Voorlichting & advies",
-    text: "Advies over herstel, voeding, slaapritme en antwoorden op al je vragen over de kraamperiode.",
+    text: "Advies over herstel, voeding, slaapritme en antwoorden op je vragen over de kraamperiode.",
   },
   {
     title: "Emotionele steun",
-    text: "Een luisterend oor en begripvolle begeleiding bij alle emoties die de kraamtijd met zich meebrengt.",
+    text: "Een luisterend oor en begripvolle begeleiding bij alles wat de kraamtijd met zich meebrengt.",
   },
 ];
 
@@ -81,17 +81,17 @@ const faqs = [
   {
     question: "Wordt kraamzorg vergoed door mijn zorgverzekeraar?",
     answer:
-      "Ja. Kraamzorg wordt vergoed vanuit de basisverzekering en valt niet onder je eigen risico. Ik werk met alle grote zorgverzekeraars, zoals Zilveren Kruis, CZ, VGZ, Menzis en DSW. Je betaalt dus zelf niets voor de zorg.",
+      "Ja. Kraamzorg wordt vergoed vanuit de basisverzekering en valt niet onder je eigen risico. Ik werk met alle grote zorgverzekeraars, zoals Zilveren Kruis, CZ, VGZ, Menzis en DSW. Je betaalt zelf niets voor de zorg.",
   },
   {
     question: "Wanneer moet ik mij aanmelden voor kraamzorg?",
     answer:
-      "Meld je het liefst vóór de 16e week van je zwangerschap aan. Zo is er voldoende tijd voor een intakegesprek en is je plek in de planning rond je uitgerekende datum gegarandeerd. Ben je verder in je zwangerschap? Neem gerust contact op — vaak kan ik alsnog iets betekenen.",
+      "Meld je het liefst vóór de 16e week van je zwangerschap aan. Dan is er voldoende tijd voor een intakegesprek en is je plek in de planning rond je uitgerekende datum zekerder. Ben je verder? Neem gerust contact op. Vaak kan ik alsnog iets betekenen.",
   },
   {
     question: "Hoeveel uur kraamzorg krijg ik?",
     answer:
-      "Het aantal uur wordt bepaald door de indicatie van je verloskundige of het kraamzorgbureau, meestal tussen de 24 en 80 uur, verdeeld over 8 tot 10 dagen. Tijdens het intakegesprek bespreken we wat past bij jouw situatie en wensen.",
+      "Het aantal uur wordt bepaald door de indicatie van je verloskundige of het kraamzorgbureau. Meestal ligt dit tussen de 24 en 80 uur, verdeeld over 8 tot 10 dagen. Tijdens het intakegesprek bespreken we wat past bij jouw situatie.",
   },
   {
     question: "In welke plaatsen bied je kraamzorg aan?",
@@ -101,7 +101,7 @@ const faqs = [
   {
     question: "Bied je ook begeleiding in het Arabisch?",
     answer:
-      "Ja, ik ben tweetalig en begeleid gezinnen in zowel het Nederlands als het Arabisch. Geen taalbarrières, maar een vertrouwd gesprek in jouw eigen taal — ook tijdens het intakegesprek en de kraamweek zelf.",
+      "Ja. Ik ben tweetalig en begeleid gezinnen in zowel het Nederlands als het Arabisch. Zo kun je in je eigen taal praten, zonder taalbarrière, tijdens het intakegesprek en de kraamweek.",
   },
 ];
 
@@ -150,8 +150,9 @@ export default function Home() {
                   Gefeliciteerd met je zwangerschap!
                 </strong>{" "}
                 De eerste dagen na de geboorte zijn bijzonder, maar kunnen ook
-                spannend zijn. Ik ben <strong className="font-bold text-plum-800">Fatima</strong> —
-                tijdens de kraamweek sta ik naast je, zodat je met vertrouwen
+                spannend zijn. Ik ben{" "}
+                <strong className="font-bold text-plum-800">Fatima</strong>.
+                Tijdens de kraamweek sta ik naast je, zodat je met vertrouwen
                 herstelt en geniet van je baby.
               </p>
             </Reveal>
@@ -175,31 +176,28 @@ export default function Home() {
             </Reveal>
             <Reveal delay={400}>
               <ul className="mt-9 flex flex-wrap gap-x-6 gap-y-3 text-sm font-bold text-plum-700">
-                {[
-                  "100% vergoed",
-                  "KCKZ-gecertificeerd",
-                  "NL & العربية",
-                ].map((chip) => (
-                  <li key={chip} className="inline-flex items-center gap-2">
-                    <svg
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      className="h-4.5 w-4.5 text-rose-500"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    {chip}
-                  </li>
-                ))}
+                {["100% vergoed", "KCKZ-gecertificeerd", "NL & العربية"].map(
+                  (chip) => (
+                    <li key={chip} className="inline-flex items-center gap-2">
+                      <svg
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="h-4.5 w-4.5 text-rose-500"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      {chip}
+                    </li>
+                  )
+                )}
               </ul>
             </Reveal>
           </div>
-
           <Reveal delay={200} className="relative">
             <div className="relative">
               <div
@@ -208,7 +206,7 @@ export default function Home() {
               />
               <Image
                 src="/images/hero-moeder-baby.webp"
-                alt="Moeder met pasgeboren baby in een warme omhelzing — Inas Kraamzorg Zaandam"
+                alt="Moeder met pasgeboren baby in een warme omhelzing. Inas Kraamzorg Zaandam"
                 width={1672}
                 height={941}
                 priority
@@ -224,9 +222,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="absolute -top-5 -right-3 rounded-3xl bg-plum-900 px-6 py-4 shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)] sm:-right-6">
-                <p className="text-sm font-bold text-white">
-                  100% vergoed
-                </p>
+                <p className="text-sm font-bold text-white">100% vergoed</p>
                 <p className="text-xs text-cream-100/70">
                   door alle zorgverzekeraars
                 </p>
@@ -293,10 +289,10 @@ export default function Home() {
             <Reveal delay={200}>
               <p className="mt-6 text-lg leading-relaxed text-plum-500">
                 Met persoonlijke aandacht, rust en professionele begeleiding
-                zorg ik ervoor dat jij je nooit alleen voelt. Met een
-                achtergrond in zowel de Nederlandse als Arabische cultuur
-                begrijp ik hoe belangrijk persoonlijke aandacht is tijdens deze
-                bijzondere periode.
+                zorg ik ervoor dat jij je niet alleen voelt. Door mijn
+                achtergrond in zowel de Nederlandse als de Arabische cultuur
+                begrijp ik hoe belangrijk respect, privacy en persoonlijke
+                aandacht zijn in deze periode.
               </p>
             </Reveal>
             <Reveal delay={300}>
@@ -358,8 +354,8 @@ export default function Home() {
           </Reveal>
           <Reveal delay={200}>
             <p className="mt-5 text-lg leading-relaxed text-plum-500">
-              Van medische controles tot een luisterend oor — tijdens de
-              kraamweek zorg ik voor moeder, baby én het hele gezin.
+              Van medische controles tot een luisterend oor. Tijdens de
+              kraamweek zorg ik voor moeder, baby en het hele gezin.
             </p>
           </Reveal>
         </div>
@@ -411,7 +407,10 @@ export default function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
               <p className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[13px] font-bold tracking-[0.14em] text-blush-300 uppercase">
-                <span className="h-1.5 w-1.5 rounded-full bg-rose-400" aria-hidden="true" />
+                <span
+                  className="h-1.5 w-1.5 rounded-full bg-rose-400"
+                  aria-hidden="true"
+                />
                 Zo werkt het
               </p>
             </Reveal>
@@ -422,7 +421,7 @@ export default function Home() {
             </Reveal>
             <Reveal delay={200}>
               <p className="mt-5 text-lg leading-relaxed text-cream-100/75">
-                Van aanmelding tot de eerste kraamdag — ik neem je bij de hand
+                Van aanmelding tot de eerste kraamdag. Ik neem je bij de hand
                 en regel alles met je verloskundige en zorgverzekeraar.
               </p>
             </Reveal>
@@ -478,7 +477,7 @@ export default function Home() {
             <Reveal delay={200}>
               <p className="mt-6 text-lg leading-relaxed text-plum-500">
                 Ik bied kraamzorg aan huis in Zaandam en omliggende plaatsen.
-                In alle rust en met aandacht — bij jou in de buurt. Meer dan{" "}
+                In alle rust en met aandacht, bij jou in de buurt. Meer dan{" "}
                 <strong className="font-bold text-plum-800">200 gezinnen</strong>{" "}
                 in de Zaanstreek kozen al voor mijn persoonlijke aanpak.
               </p>
@@ -526,7 +525,7 @@ export default function Home() {
           <Reveal className="order-2 lg:order-1">
             <Image
               src="/images/stilleven-kraamzorg.webp"
-              alt="Zachte roze hydrofiele doek met gebreide babyslofjes — kraamzorg Zaandam"
+              alt="Zachte roze hydrofiele doek met gebreide babyslofjes. Kraamzorg Zaandam"
               width={1200}
               height={800}
               className="aspect-[4/3] w-full rounded-[2.5rem] object-cover shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
@@ -545,7 +544,7 @@ export default function Home() {
               <p className="mt-6 text-lg leading-relaxed text-plum-500">
                 Niets zegt meer dan de ervaringen van ouders die je
                 voorgingen. Lees op Google wat gezinnen in Zaandam en de
-                Zaanstreek over mijn begeleiding schrijven — en waarom zij
+                Zaanstreek over mijn begeleiding schrijven, en waarom zij
                 andere ouders Inas Kraamzorg aanraden.
               </p>
             </Reveal>
