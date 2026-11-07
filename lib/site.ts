@@ -2,7 +2,9 @@ export const site = {
   name: "Inas Kraamzorg",
   legalName: "Inas Kraamzorg Zaandam",
   person: "Fatima",
-  tagline: "Persoonlijke kraamzorg in Zaandam & de Zaanstreek",
+  tagline: "Persoonlijke kraamzorg in Zaandam en de Zaanstreek",
+  description:
+    "Warme en persoonlijke kraamzorg aan huis in Zaandam en omgeving door kraamverzorgster Fatima. Ook in het Arabisch. 100% vergoed vanuit de basisverzekering.",
   url: "https://www.inaskraamzorg.nl",
   phone: "06-24933335",
   phoneHref: "tel:+31624933335",
@@ -14,6 +16,7 @@ export const site = {
   gaId: "G-PYSMDXW9SJ",
   gtId: "GT-PHWW36NT",
   gscVerification: "dGGucfVbU-Y7iIj_RsZU1n-8oZfxg9qolUeWiJI_W2c",
+  languages: ["nl", "ar"],
 };
 
 export const navLinks = [
