@@ -6,9 +6,9 @@ import Reveal from "@/components/reveal";
 import { CtaBanner, Eyebrow, PageHero } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Over mij — Maak kennis met kraamverzorgster Fatima",
+  title: "Over mij | Maak kennis met kraamverzorgster Fatima",
   description:
-    "Maak kennis met Fatima, gediplomeerd kraamverzorgster in Zaandam. Warme, persoonlijke zorg en tweetalige begeleiding (Nederlands/Arabisch) bij jou thuis in de Zaanstreek.",
+    "Maak kennis met Fatima, gediplomeerd kraamverzorgster in Zaandam. Warme, persoonlijke zorg en tweetalige begeleiding in het Nederlands en Arabisch bij jou thuis in de Zaanstreek.",
   alternates: { canonical: "/over-mij/" },
 };
 
@@ -37,7 +37,7 @@ const expertise = [
   },
   {
     title: "Babyverzorging",
-    text: "Van badje tot verschonen — ik leer je alle basisvaardigheden.",
+    text: "Van badje tot verschonen. Ik leer je alle basisvaardigheden.",
   },
   {
     title: "Medische controles",
@@ -69,8 +69,8 @@ export default function OverMijPage() {
     <>
       <PageHero
         eyebrow="Over mij"
-        title="Maak kennis met Fatima — jouw kraamverzorgster in Zaandam"
-        intro="Warme, persoonlijke zorg en tweetalige ondersteuning (Nederlands/Arabisch) bij jou thuis in de Zaanstreek."
+        title="Maak kennis met Fatima, jouw kraamverzorgster in Zaandam"
+        intro="Warme, persoonlijke zorg en tweetalige ondersteuning in het Nederlands en Arabisch bij jou thuis in de Zaanstreek."
       />
 
       {/* Introductie */}
@@ -83,7 +83,7 @@ export default function OverMijPage() {
             />
             <Image
               src="/images/fatima-in-actie.webp"
-              alt="Fatima — gediplomeerd kraamverzorgster van Inas Kraamzorg Zaandam"
+              alt="Fatima, gediplomeerd kraamverzorgster van Inas Kraamzorg Zaandam"
               width={400}
               height={300}
               priority
@@ -111,16 +111,17 @@ export default function OverMijPage() {
               <div className="mt-6 space-y-5 text-lg leading-relaxed text-plum-500">
                 <p>
                   Als kraamverzorgster met een achtergrond in zowel de
-                  Nederlandse als Arabische cultuur begrijp ik hoe belangrijk
+                  Nederlandse als de Arabische cultuur begrijp ik hoe belangrijk
                   persoonlijke aandacht is tijdens deze bijzondere periode.
                   Mijn wens is om jonge gezinnen in Zaandam met warmte en
                   deskundigheid te begeleiden.
                 </p>
                 <p>
-                  Met ruim <strong className="font-bold text-plum-800">6 jaar ervaring</strong>{" "}
+                  Met ruim{" "}
+                  <strong className="font-bold text-plum-800">6 jaar ervaring</strong>{" "}
                   in kraamzorg en expertise in borstvoedingsbegeleiding stem ik
                   mijn zorg af op jouw persoonlijke wensen en situatie. In alle
-                  rust en met respect voor jullie gezin — zodat de eerste dagen
+                  rust en met respect voor jullie gezin, zodat de eerste dagen
                   met je baby voelen zoals ze horen te voelen: veilig en
                   vertrouwd.
                 </p>
@@ -211,7 +212,7 @@ export default function OverMijPage() {
           <Reveal delay={200}>
             <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-cream-100/75">
               Als tweetalige kraamverzorgster zorg ik voor heldere communicatie
-              en begrip. Geen taalbarrières — maar rust, duidelijkheid en
+              en begrip. Geen taalbarrières, maar rust, duidelijkheid en
               aandacht in de taal die bij jou past.
             </p>
           </Reveal>
@@ -245,7 +246,12 @@ export default function OverMijPage() {
             </Reveal>
             <ol className="mt-10 space-y-6">
               {werkwijze.map((stap, i) => (
-                <Reveal as="li" key={stap.title} delay={i * 120} className="flex gap-5">
+                <Reveal
+                  as="li"
+                  key={stap.title}
+                  delay={i * 120}
+                  className="flex gap-5"
+                >
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-rose-500 font-display text-xl font-semibold text-white">
                     {i + 1}
                   </span>
@@ -272,7 +278,7 @@ export default function OverMijPage() {
           <Reveal delay={150}>
             <Image
               src="/images/hero-kraamzorg.webp"
-              alt="Sfeervolle, rustige babykamer — zo voelt kraamzorg van Inas Kraamzorg"
+              alt="Sfeervolle, rustige babykamer. Zo voelt kraamzorg van Inas Kraamzorg"
               width={2048}
               height={1152}
               className="aspect-[4/3] w-full rounded-[2.5rem] object-cover shadow-[0_24px_60px_-20px_rgb(46_27_36/0.22)]"
