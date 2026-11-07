@@ -1,4 +1,4 @@
-export const site = {
+export const site = { 
   name: "Inas Kraamzorg",
   legalName: "Inas Kraamzorg Zaandam",
   person: "Fatima",
